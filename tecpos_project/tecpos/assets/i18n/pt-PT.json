@@ -1,0 +1,68 @@
+{
+    "screens": {
+        "settings": {
+            "name": "Definições",
+            "theme": {
+                "title": "Tema",
+                "description": "",
+                "content": {
+                    "darkMode": {
+                        "title": "Dark Mode",
+                        "description": "Ativar o Dark Mode no POS"
+                    },
+                    "theme": {
+                        "title": "Temas",
+                        "popUpTitle": "Escolha o tema do POS"
+                    }
+                }
+            },
+            "about": {
+                "title": "Sobre",
+                "description": "",
+                "content": {
+                    "github": {
+                        "title": "GitHub",
+                        "description": "Abre o repositório da app no browser."
+                    },
+                    "info": {
+                        "title": "Informações",
+                        "description": "A fazer mais tarde",
+                        "content": {
+                            "appName": "Nome: ",
+                            "version": "Versão: "
+                        }
+                    }
+                }
+            },
+            "language": {
+                "title": "Língua",
+                "description": "Escolha a língua do POS.",
+                "content": {
+                    "choose_lang": {
+                        "title": "Língua",
+                        "description": "Escolha a língua do POS."
+                    }
+                }
+            }
+        },
+        "login": {
+            "popUp": {
+                "buttonText": "Login",
+                "user": "Utilizador",
+                "password": "Password",
+                "incorrectCredentials": "Credenciais Incorretas!"
+            }
+        }
+    },
+    "generic": {
+        "ok": "Ok",
+        "cancel": "Cancelar"
+    },
+    "languages": {
+        "langPicker": {
+            "title": "Selecione uma linguagem"
+        },
+        "pt": "Português",
+        "en": "Inglês"
+    }
+}

@@ -1,0 +1,30 @@
+name: Web Flutter build to Github Pages Deployer
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web_flutter_build_to_github_pages_deployer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔎 - Checkout repository - 🔎
+        uses: actions/checkout@v3
+      - name: ⚙️ - Setup Flutter - ⚙️
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - name: 📜 - Install dependencies - 📜
+        run: flutter pub get
+      - name: 🏗️ - Build Flutter Web - 🏗️
+        run: flutter build web
+      - name: 🚚 - Copy CNAME file to build directory - 🚚
+        run: cp CNAME build/web/
+      - name: ✈️ - Deploy to GitHub Pages - ✈️
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: build/web
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

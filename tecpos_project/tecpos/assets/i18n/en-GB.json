@@ -1,0 +1,68 @@
+{
+    "screens": {
+        "settings": {
+            "name": "Settings",
+            "theme": {
+                "title": "Theme",
+                "description": "",
+                "content": {
+                    "darkMode": {
+                        "title": "Dark Mode",
+                        "description": "Activate Dark Mode in POS"
+                    },
+                    "theme": {
+                        "title": "Themes",
+                        "popUpTitle": "Choose the POS theme"
+                    }
+                }
+            },
+            "about": {
+                "title": "About",
+                "description": "",
+                "content": {
+                    "github": {
+                        "title": "GitHub",
+                        "description": "Opens the app repository in the browser."
+                    },
+                    "info": {
+                        "title": "Information",
+                        "description": "To be added later",
+                        "content": {
+                            "appName": "App Name: ",
+                            "version": "Version: "
+                        }
+                    }
+                }
+            },
+            "language": {
+                "title": "Language",
+                "description": "Choose the language for the POS.",
+                "content": {
+                    "choose_lang": {
+                        "title": "Language",
+                        "description": "Choose the language for the POS."
+                    }
+                }
+            }
+        },
+        "login": {
+            "popUp": {
+                "buttonText": "Login",
+                "user": "User",
+                "password": "Password",
+                "incorrectCredentials": "Incorrect Credentials!"
+            }
+        }
+    },
+    "generic": {
+        "ok": "Ok",
+        "cancel": "Cancel"
+    },
+    "languages": {
+        "langPicker": {
+            "title": "Select a language"
+        },
+        "pt": "Portuguese",
+        "en": "English"
+    }
+}
